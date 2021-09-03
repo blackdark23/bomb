@@ -2,7 +2,8 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 import os 
-
+import time 
+from time import sleep 
 
 R = '\033[1;31m'
 G = '\033[1;32m'
@@ -38,8 +39,10 @@ headers2["Content-Length"] = "0"
 
 
 print(G + "SMS Sending...")
+sleep(1)
 for j in range(amount):
     resp = requests.post(binge1, headers=headers1, data=data1)
+    sleep(1)
     resp1 = requests.post(url, headers=headers2)
     print("")
     print(G + "[✓] "+str(j+1)+" SMS Sent Successful...")
