@@ -1,5 +1,3 @@
-#!/usr/local/bin/python
-
 import requests
 from requests.structures import CaseInsensitiveDict
 import os 
