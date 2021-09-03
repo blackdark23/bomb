@@ -41,4 +41,4 @@ for j in range(amount):
     resp1 = requests.post(url, headers=headers2)
 
     
-    print(G + "[✓]"+str(j+1)+" SMS Sent Successful...")
+    print(G + "[✓] "+str(j+1)+" SMS Sent Successful...")
