@@ -1,3 +1,4 @@
+# coding=utf-8
 import os 
 import sys
 import time 
@@ -47,5 +48,14 @@ hp(R + ' Then one day you will be successful.')
 hp(C + ' Inshallah.')
 hp(G +  '                  --SMSH')
 print("")
-hp(R + "                   SMS BOMBING "     )
+hp(R + "   ===========================================")
+hp(C + "    ╔═╗╔╦╗╔═╗  ╔╗ ╔═╗╔╦╗╔╗ ╦┌┐┌┌─┐ "     )
+hp(W + "    ╚═╗║║║╚═╗  ╠╩╗║ ║║║║╠╩╗║││││ ┬"      )
+hp(C + "    ╚═╝╩ ╩╚═╝  ╚═╝╚═╝╩ ╩╚═╝╩┘└┘└─┘") 
+hp(W +  "                                   v2.4 "      )
+hp(R + "   ======================×====================")
 print("")
+sleep(1)
+
+
+
