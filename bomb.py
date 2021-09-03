@@ -12,7 +12,7 @@ os.system("python2 logo.py")
 
 number=str(input(C + "Enter Your Number: "))
 print("")
-print(Y + "3 times as much as you give.For example: 10 × 3 = 30.If you give 10 massage  30 will send the message.")
+print(Y + "3 times as much as you give.For example:10 × 3 = 30.If you give 10 massage 30 will send the message.")
 print("")
 amount=int(input(C + "Enter Amount: "))
 #1 
