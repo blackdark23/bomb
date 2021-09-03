@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: ascii -*-
+
 import requests
 from requests.structures import CaseInsensitiveDict
 import os 
