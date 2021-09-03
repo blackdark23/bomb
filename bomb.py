@@ -1,5 +1,4 @@
 #!/usr/local/bin/python
-# -*- coding: utf-42 -*-
 
 import requests
 from requests.structures import CaseInsensitiveDict
