@@ -62,7 +62,7 @@ shoj = "https://xrides.shohoz.com/api/v2/user/send-mobile-verification-code"
 headers6 = CaseInsensitiveDict()
 headers6["Content-Type"] = "application/json"
 
-data6 = '{"mobile":"+number"}'
+data6 = '{\"mobile\":\"'+number+'\"}'
 
 
 
