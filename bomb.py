@@ -52,7 +52,7 @@ data3 = "phone="+number
 tms = "https://dev.10minuteschool.com/api/v4/auth/sendOtp?"
 
 headers5 = CaseInsensitiveDict()
-headers["Content-Type"] = "application/x-www-form-urlencoded"
+headers5["Content-Type"] = "application/x-www-form-urlencoded"
 
 data5 = "contact=88"+number
 
