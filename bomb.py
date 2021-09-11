@@ -46,7 +46,7 @@ quiz = "https://developer.quizgiri.xyz/api/v2.0/send-otp"
 headers3 = CaseInsensitiveDict()
 headers3["Content-Type"] = "application/x-www-form-urlencoded"
 
-data3 = "phone="+number
+data3 = '{\"phone\":\"'+number+'\","country_code":"+880","fcm_token":null}'
 
 #5
 tms = "https://dev.10minuteschool.com/api/v4/auth/sendOtp?"
